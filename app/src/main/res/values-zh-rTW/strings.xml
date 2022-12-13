@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Secret Message</string>
+    <string name="start">開始</string>
+    <string name="next">下一步</string>
+    <string name="message_hint">請輸入您的秘密訊息</string>
+    <string name="welcome_text">歡迎來到秘密訊息APP！
+        使用此APP加密秘密訊息。
+        點擊開始按鈕開始。</string>
+    <string name="encrypt_text">這是您的加密訊息：</string>
+</resources>
