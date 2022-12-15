@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.findNavController
 
 class EncryptFragment : Fragment() {
@@ -15,6 +16,11 @@ class EncryptFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // 將這個fragment的layout充氣
-        return inflater.inflate(R.layout.fragment_encrypt, container, false)
+        val view = inflater.inflate(R.layout.fragment_encrypt, container, false)
+
+        val message = EncryptFragmentArgs.fromBundle(requireArguments()).message
+        val encryptedView = view.findViewById<TextView>(R.id.encrypted_message)
+        encryptedView.text = message.reversed()
+        return view
     }
 }
