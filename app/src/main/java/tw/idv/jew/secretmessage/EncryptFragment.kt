@@ -8,20 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 
-class MessageFragment : Fragment() {
+class EncryptFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // 將這個fragment的layout充氣
-        val view = inflater.inflate(R.layout.fragment_message, container, false)
-        val nextButton = view.findViewById<Button>(R.id.next)
-
-        nextButton.setOnClickListener {
-            view.findNavController()
-                .navigate(R.id.action_messageFragment_to_encryptFragment)
-        }
-        return view
+        return inflater.inflate(R.layout.fragment_encrypt, container, false)
     }
 }
